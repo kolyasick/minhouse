@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainCSS/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/projectsCSS/projects.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>MINHOUSE</title>
+</head>
+<body>  
+
+    <!-- HEADER -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container nav__burger">
+            <div class="logo">
+                <a class="navbar-brand logo" href="index.html">MINHOUSE</a>
+            </div>
+              <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">MINHOUSE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <hr>
+                    <ul class="offcanvas__navs">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="projects.html">ПРОЕКТЫ</a>
+                            <div style="opacity: 1;" class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="work-steps.html">ЭТАПЫ РАБОТЫ</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="hypotheс.html">ИПОТЕКА</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="contacts.html">КОНТАКТЫ</a>
+                            <div class="underline"></div>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="nav__items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item  me-4">
+                      <a class="nav-link p-0 pt-2" aria-current="page" href="projects.html">ПРОЕКТЫ</a>
+                      <div style="opacity: 1;" class="underline mt-1"></div>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link p-0 pt-2" href="work-steps.html">ЭТАПЫ РАБОТЫ</a>
+                      <div class="underline mt-1"></div>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link p-0 pt-2" href="hypotheс.html">ИПОТЕКА</a>
+                      <div class="underline mt-1"></div>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link p-0 pt-2" href="contacts.html">КОНТАКТЫ</a>
+                      <div class="underline mt-1"></div>
+                    </li>
+                  </ul>
+            </div>
+          <div class="nav__number">
+              <ul>
+                  <li class="nav-item">
+                      <a class="nav-link p-0" href="#">+7 900 000 00-00</a>
+                      <div class="underline mt-1"></div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <hr>
+    </header>
+
+    <!-- PROJECTS -->
+
+    <div  class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-dark fs-5" id="exampleModalToggleLabel">Мансардные</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img width="100%" src="img/projects-images/projects-item1.jpg" alt="house1">
+            <p class="text-dark mt-3">Здания, имеющие ориентированные в небо окна и небольшие балкончики, действительно смотрятся интереснее традиционных прямоугольных построек. Еще один плюс мансарды — универсальность. Здесь можно обустроить что угодно: спальню, детскую, игровую, комнату отдыха, мастерскую, рабочий кабинет.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-dark fs-5" id="exampleModalToggleLabel">Двухэтажные</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img width="100%" src="img/projects-images/projects-item2.jpg" alt="house1">
+            <p class="text-dark mt-3">Также по статистике в одноэтажном доме на 10% теплее, чем в двухэтажном Летом в одноэтажном доме прохладнее (если он затенен деревьями), а зимой теплее – так как он меньше выступает вверх.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-dark fs-5" id="exampleModalToggleLabel">Одноэтажные</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img width="100%" src="img/projects-images/projects-item2.jpg" alt="house1">
+            <p class="text-dark mt-3">Отсутствие лестницы избавит всех жильцов от необходимость постоянно подниматься и спускаться с этажа на этаж в поисках чего-либо. Особенно удобно это будет для семей с маленькими детьми или пожилыми родителями, для которых лестница может быть опасна. Увеличение полезной площади.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="projects" class="section__projects">
+        <div class="container">
+            <h1 class="fw-light">ПРОЕКТЫ ДОМОВ</h1>
+            <div class="section__projects-items modal-body mt-5 row m-0 justify-content-center">
+                <div id="house-1" data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="projects-item border col-xl-auto col-md-12 w-auto p-4 me-4">
+                    <h5 class="fw-normal">МАНСАРДНЫЕ</h5>
+                    <img src="img/projects-images/projects-item1.jpg" alt="house1">
+                </div>
+                <div id="house-2" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" class="projects-item border col-xl-auto col-md-12 w-auto p-4 me-4">
+                    <h5 class="fw-normal">ДВУХЭТАЖНЫЕ</h5>
+                    <img src="img/projects-images/projects-item2.jpg" alt="house2">
+                </div>
+                <div id="house-3" data-bs-toggle="modal" href="#exampleModalToggle3" role="button" class="projects-item border col-xl-auto col-md-12 w-auto p-4">
+                    <h5 class="fw-normal">ОДНОЭТАЖНЫЕ</h5>
+                    <img src="img/projects-images/projects-item3.jpg" alt="house3">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- PORTFOLIO -->
+
+    <div id="porfolio" class="section__portfolio mt-5">
+        <div class="container">
+            <h1 class="fw-light">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h1>
+            <swiper-container class="mySwiper container mt-5 p-0" navigation="true" pagination="true" loop="infinite" autoplay-delay="2000" autoplay-disable-on-interaction="false">
+                <swiper-slide>
+                  <img src="img/review-images/porfolio-img.jpg" alt="portfolio-img">
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="img/review-images/review-img2.jpg" alt="portfolio-img">
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="img/review-images/review-img3.jpg" alt="portfolio-img">
+                </swiper-slide>
+              </swiper-container>
+        </div>
+    </div>
+
+    <!-- CALCULATE FORM -->
+
+    <div id="calcForm" class="section__calcform mt-5">
+      <div class="container">
+      <h1 class="fw-light mb-5">РАСЧИТАТЬ СТОИМОСТЬ<br>ВАШЕГО ПРОЕКТА</h1>
+      <form class="row g-3">
+          <div class="col-xl-3">
+              <label for="validationDefault04" class="form-label text-white">ТИП ДОМА</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected value="">Одноэтажный</option>
+                <option>Двухэтажный</option>
+              </select>
+            </div>
+          <div class="col-xl-3">
+            <label for="validationDefault01" class="form-label text-white">ПЛОЩАДЬ</label>
+            <input type="text" class="form-control" id="validationDefault01" value="100 кв.м" required>
+          </div>
+          <div class="col-xl-3">
+              <label for="validationDefault04" class="form-label text-white">МАТЕРИАЛ</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected value="">Кирпич</option>
+                <option>Бетон</option>
+              </select>
+            </div>
+            <div class="col-xl-3">
+              <label for="validationDefault04" class="form-label text-white">ТЕРАССА</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected value="">Нужна</option>
+                <option>Не нужна</option>
+              </select>
+            </div>
+            <div class="col-xl-3">
+              <label for="validationDefault04" class="form-label text-white">СПАЛЬНИ</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected value="">1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="col-xl-3">
+              <label for="validationDefault01" class="form-label text-white">ГОРОД</label>
+              <input type="text" class="form-control" id="validationDefault01" value="Москва" required>
+            </div>
+            <div class="col-xl-3 col-md-12">
+              <label for="validationDefault01" class="form-label text-white">НОМЕР ТЕЛЕФОНА</label>
+              <input type="text" class="form-control" id="validationDefault01" value="+7 (900)000 00 00" required>
+            </div>
+            <div class="col-xl-3 col-sm-12  align-self-end">
+                  <button class="calc-btn btn w-100" type="submit">ОТПРАВИТЬ ДАННЫЕ</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div style="background-color: black;" class="footer mt-5">
+      <footer class="row container mx-auto pt-5 mt-5">
+        <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+          <a href="index.html" class=" text-center mb-3 link-dark text-decoration-none">
+            MINHOUSE
+          </a>
+          <p class="text-muted">© 2022</p>
+        </div>
+    
+        <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+          <h5>Главная</h5>
+          <ul class="nav flex-column justify-content-end">
+            <li class="nav-item mb-2">
+              <a href="index.html#aboutUs" class="nav-link p-0 text-muted">О нас</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="index.html#howWeWork" class="nav-link p-0 text-muted">Как мы работаем</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="index.html#reviews" class="nav-link p-0 text-muted">Отзывы</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="index.html#contacts" class="nav-link p-0 text-muted">Связаться</a>
+            </li>
+    
+          </ul>
+        </div>
+    
+        <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+          <h5>Проекты</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="projects.html#projects" class="nav-link p-0 text-muted">Проекты домов</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="projects.html#porfolio" class="nav-link p-0 text-muted">Портфолио</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="projects.html#calcForm" class="nav-link p-0 text-muted">Расчитать стоимость</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+          <h5>Этапы работы</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="work-steps.html#howWeWork" class="nav-link p-0 text-muted">Как мы работаем</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="work-steps.html#advantages" class="nav-link p-0 text-muted">Преимущества</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="work-steps.html#faqs" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+          <h5>Ипотека</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a href="hypotheс.html#calc" class="nav-link p-0 text-muted">Калькулятор ипотеки</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="hypotheс.html#faqs" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+          <h5>Контакты</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="contacts.html#contacts" class="nav-link p-0 text-muted">Обратная связь</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="contacts.html#map" class="nav-link p-0 text-muted">Где мы находимся</a>
+            </li>
+          </ul>
+        </div>
+    </div> 
+    
+
+    <script src="js/projects.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

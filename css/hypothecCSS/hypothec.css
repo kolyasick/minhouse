@@ -1,0 +1,61 @@
+header {
+  background-image: none;
+}
+
+h1, h4 {
+  margin: 0px !important;
+}
+
+.section__hypothec-calc h6 {
+  font-size: 14px !important;
+}
+
+.section__hypothec-item h1 {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: calc(50px + 15 * (100vw - 320px) / 880);
+  height: calc(45px + 22 * (100vw - 320px) / 880) !important;
+}
+.section__hypothec-item h4 {
+  font-size: calc(14px + 5 * (100vw - 320px) / 880);
+}
+
+#sub-btn {
+  background-color: #141414;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#sub-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .section__hypothec {
+    flex-direction: column;
+    align-items: start;
+    gap: 5rem;
+  }
+  .section__hypothec .section__hypothec-calc {
+    width: 100% !important;
+  }
+  .section__hypothec-items {
+    transform: translateY(-50%);
+    transition: all 2s;
+    opacity: 0;
+  }
+  .section__hypothec-items.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .section__hypothec-calc {
+    transform: translateX(50%);
+    transition: all 2s;
+    opacity: 0;
+  }
+  .section__hypothec-calc.active {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=hypothec.css.map */

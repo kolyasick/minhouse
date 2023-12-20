@@ -1,0 +1,166 @@
+header{
+    background-image: none;
+}
+
+///////////////////////////// ADVANTAGES /////////////////////////////////////
+
+.advantage-text{
+    h1{
+        font-size:calc(45px + 50 * (100vw - 320px) / 880);
+    }
+    strong{
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    span{
+        font-size: 4.5vw;
+    }
+}
+
+
+.accordion-header{
+    button{
+        
+        background-color: #141414;
+        padding: 20px 0px 20px;
+        font-size:calc(13px + 3 * (100vw - 320px) / 880);
+    }
+}
+
+.wrapper{
+    width: calc(270px + 250 * (100vw - 320px) / 880) !important;
+}
+
+@media (max-width: 1200px) {
+   .section__faq-items{
+    margin-top: 3rem !important;
+   }
+   .wrapper{
+    width: 80vw;
+    margin: 10px;
+   }
+   .faq-img{
+    margin: 10px;
+}
+}
+
+.faq-img{
+    width: 100% !important;
+}
+
+#itemFirst{
+    transform: translateX(40%);
+    transition: all 2s;
+    opacity: 0;
+}
+
+#itemFirst.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#itemSecond{
+    transform: translateX(40%);
+    transition: all 2.5s;
+    opacity: 0;
+}
+
+#itemSecond.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#itemThird{
+    transform: translateX(40%);
+    transition: all 3s;
+    opacity: 0;
+}
+
+#itemThird.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#adv-1{
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0 ;
+}
+
+#adv-1.active{
+    transition-delay: .3s;
+    transform: translateX(0);
+    opacity: 1 ;
+}
+
+#adv-2{
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0 ;
+}
+
+#adv-2.active{
+    transition-delay: 1s;
+    transform: translateX(0);
+    opacity: 1 ;
+}
+
+#adv-3{
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0 ;
+}
+
+#adv-3.active{
+    transition-delay: 1.5s;
+    transform: translateX(0);
+    opacity: 1 ;
+}
+
+@media (min-width: 1200px) {
+    .section__hypothec-items{
+        transform: translateX(-50%);
+        transition: all 2s;
+        opacity: 0;
+    }
+    
+    
+    .section__hypothec-items.active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .section__hypothec-calc{
+        transform: translateY(-50%);
+        transition: all 2s;
+        opacity: 0;
+    }
+    
+    .section__hypothec-calc.active{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.section__faq-img{
+    transform: translateX(-50%);
+    transition: all 2s;
+    opacity: 0;
+}
+
+.section__faq-img.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.section__faq-items{
+    transform: translateX(50%);
+    transition: all 2s;
+    opacity: 0;
+}
+
+.section__faq-items.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+

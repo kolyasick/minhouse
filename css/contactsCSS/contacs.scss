@@ -1,0 +1,19 @@
+header {
+  background-image: none;
+}
+
+.section__contacts-mobile__block{
+  transition: all 3s;
+  opacity: 0;
+}
+
+.section__contacts-mobile__block.active{
+  opacity: 1;
+}
+
+
+@media (max-width: 993px) {
+  .section__map iframe {
+    height: calc(350px + 350 * (100vw - 320px) / 880);
+  }
+}

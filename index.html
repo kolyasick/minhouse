@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainCSS/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>MINHOUSE</title>
+</head>
+<body>
+
+
+<!-- HEADER -->
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container nav__burger">
+                <div class="logo">
+                    <a class="navbar-brand logo ml2" href="index.html">MINHOUSE</a>
+                    
+                </div>
+                  <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">MINHOUSE</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <hr>
+                        <ul class="offcanvas__navs">
+                            <li class="nav-item">
+                                <a class="nav-link p-0 pb-2" href="projects.html">ПРОЕКТЫ</a>
+                                <div class="underline"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 pb-2" href="work-steps.html">ЭТАПЫ РАБОТЫ</a>
+                                <div class="underline"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 pb-2" href="hypotheс.html">ИПОТЕКА</a>
+                                <div class="underline"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 pb-2" href="contacts.html">КОНТАКТЫ</a>
+                                <div class="underline"></div>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="nav__items">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item  me-4">
+                            <a class="nav-link p-0 pt-2" aria-current="page" href="projects.html">ПРОЕКТЫ</a>
+                            <div class="underline mt-1"></div>
+                          </li>
+                          <li class="nav-item me-4">
+                            <a class="nav-link p-0 pt-2" href="work-steps.html">ЭТАПЫ РАБОТЫ</a>
+                            <div class="underline mt-1"></div>
+                          </li>
+                          <li class="nav-item me-4">
+                            <a class="nav-link p-0 pt-2" href="hypotheс.html">ИПОТЕКА</a>
+                            <div class="underline mt-1"></div>
+                          </li>
+                          <li class="nav-item me-4">
+                            <a class="nav-link p-0 pt-2" href="contacts.html">КОНТАКТЫ</a>
+                            <div class="underline mt-1"></div>
+                          </li>
+                        </ul>
+                  </div>
+                <div class="nav__number">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">+7 900 000 00-00</a>
+                            <div class="underline mt-1"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+        <hr>
+        <div class="header__cover container">
+            <p>СТРОИМ ДОМ ВАШЕГО БУДУЩЕГО</p>
+            <h1>ДОМ ПОД КЛЮЧ В<br>МОСКВЕ И МОСКОВСКОЙ<br>ОБЛАСТИ</h1>
+            <a class="btn d-inline-flex align-items-center" id="myBtn" href="hypotheс.html" role="button">
+              УЗНАТЬ СТОИМОСТЬ
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="none" viewBox="0 0 24 24" stroke-width="" class="ms-3" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+              </svg>              
+            </a>
+        </div>
+    </header>
+
+<!-- ABOUT US -->
+
+    <div id="aboutUs" class="section__aboutus container mt-5">
+      <div class="section__about">
+        <div class="section__about-title d-flex align-items-end justify-content-between">
+          <h1 class="ml12">НАС ВЫБИРАЮТ</h1>
+          <h6>СТРОИМ С ЗАБОТОЙ О ВАШЕМ БУДУЩЕМ</h6>
+        </div>
+        <div class="section__about-cards d-flex">
+          <div class="section__about-card card-first">
+            <img style="margin-left: 0;"  src="icons/about-us-icons/nomoney.svg" alt="nomoney">
+            <div style="margin-left: 0;"  class="about__card-descr">
+              <h5>СТРОИМ<br>БЕЗ ПРЕДОПЛАТЫ</h5>
+              <p>Начинаем строить полсе<br>заключением договора, вам<br>не нужно платить сразу </p>
+            </div>
+          </div>
+          <div class="section__about-card">
+            <img src="icons/about-us-icons/house.svg" alt="house">
+            <div class="about__card-descr">
+              <h5>РАБОТАЕМ<br>С МАТ.КАПИТАЛОМ</h5>
+              <p>Проконсультируем<br>и подготовим необохдимый<br>пакет документов</p>
+            </div>
+          </div>
+          <div style="border-right: none;" class="section__about-card">
+            <img src="icons/about-us-icons/docs.svg" alt="docs">
+            <div class="about__card-descr">
+              <h5>ПОДБЕРЕМ<br>ЗЕМЕЛЬНЫЙ УЧАСТОК</h5>
+              <p>Поможем подобрать лучший<br>участок исходя из ваших<br>пожеланий и бюджета</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- HOW WE WORK -->
+
+
+    <div id="howWeWork" class="how_we_work-backg">
+    </div>
+    <div class="container">
+      <div class="section__how-we-work">
+        <h1 class="section__how-we-work-title">КАК МЫ РАБОТАЕМ</h1>
+        <div class="section__how-we-work-items d-flex mt-5">
+          <div id="item-1" class="how-we-work-item d-flex justify-content-between">
+            <h4>ОБСУЖДАЕМ <span>ПРОЕКТ</span></h4>
+            <h6>01</h6>
+            <p>Выявляем ваши потребности, формируем<br>коммерческое предложение,<br>согласуем и заключаем договор</p>
+          </div>
+          <div id="item-2" class="how-we-work-item d-flex justify-content-between border-top-0">
+            <h4>СТРОИМ <span>ДОМ</span></h4>
+            <h6>02</h6>
+            <p>Ставим задачу команде строителей,<br>приступаем к процессу, каждый этап<br>которого вы можете контролировать</p>
+          </div>
+          <div id="item-3" class="how-we-work-item d-flex justify-content-between border-top-0">
+            <h4>СДАЕМ <span>В РУКИ</span></h4>
+            <h6>03</h6>
+            <p>Передаем вам документацию, вы<br>проверяете дом на соответствие данным,<br>по итогу приёмки составляется акт</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="section__how-we-work-mobile">
+        <h1>КАК МЫ РАБОТАЕМ</h1>
+        <div class="section__how-we-work-mobile-items mt-5">
+          <div id="itemFirst" style="background-image: url(./icons/numbers/01.svg);" class="how-we-work-mobile-block">
+            <h4>ОБСУЖДАЕМ <span>ПРОЕКТ</span></h4>
+            <p>Выявляем ваши потребности, формируем коммерческое предложение, согласуем и заключаем договор</p>
+          </div>
+          <div id="itemSecond" style="background-image: url(./icons/numbers/02.svg);" class="how-we-work-mobile-block">
+            <h4>СТРОИМ <span>ДОМ</span></h4>
+            <p>Ставим задачу команде строителей, приступаем к процессу, каждый этап которого вы можете контролировать</p>
+          </div>
+          <div id="itemThird" style="background-image: url(./icons/numbers/03.svg);" class="how-we-work-mobile-block">
+            <h4>СДАЕМ <span>В РУКИ</span></h4>
+            <p>Передаем вам документацию, вы проверяете дом на соответствие данным, по итогу приёмки составляется акт</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- REVIEWS -->
+
+
+    <div id="reviews" class="container">
+      <div class="section__reviews">
+        <h1 class="section__reviews-title mb-5 ml10">ОТЗЫВЫ НАШИХ<br><span>КЛИЕНТОВ</span></h1>
+        <swiper-container class="mySwiper container" autoplay-delay="2000" autoplay-disable-on-interaction="false" navigation="true" pagination="true" loop="infinite">
+          <swiper-slide>
+            <img width="100px" src="img/review-images/review-img1.png" alt="review">
+            <div class="review-descr">
+              <h4 class="review__title">ДВУХЭТАЖНЫЙ ДОМ</h4>
+              <h6>г. Москва, 2020 год</h6>
+              <p>Обратился в компания для строительства частного в Москве. На этапе проектирования быстро отвечали на вопросы, модернизировали типовой проект исходя из запроса.
+                Строительство прошло быстро, в срок и с постоянной связью по основным этапам.
+              </p><span>Александр</span>
+            </div>
+          </swiper-slide> 
+          <swiper-slide>
+            <img width="100px" src="img/review-images/review-img2.jpg" alt="review">
+            <div class="review-descr">
+              <h4 class="review__title">ОДНОЭТАЖНЫЙ ДОМ</h4>
+              <h6>г. Одинцово, 2018 год</h6>
+              <p>Обратился в компания для строительства частного в Москве. На этапе проектирования быстро отвечали на вопросы, модернизировали типовой проект исходя из запроса.
+                Строительство прошло быстро, в срок и с постоянной связью по основным этапам.
+                </p><span>Константин</span>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <img width="100px" src="img/review-images/review-img3.jpg" alt="review">
+            <div class="review-descr">
+              <h4 class="review__title">МАНСАРДНЫЙ ДОМ</h4>
+              <h6>г. Чехов, 2023 год</h6>
+              <p>Обратился в компания для строительства частного в Москве. На этапе проектирования быстро отвечали на вопросы, модернизировали типовой проект исходя из запроса.
+                Строительство прошло быстро, в срок и с постоянной связью по основным этапам.
+                </p><span>Вячеслав</span>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+    
+
+
+<!-- CONTACTS-->
+
+
+    <div class="container mt-5">
+      <div style="display: none;" class="section__contacts">
+        <h1 class="section__contacts-title mb-5">ОБРАТНАЯ СВЯЗЬ</h1>
+        <div class="section__contacts-icons d-flex justify-content-end mb-3">
+          <a href="#">
+            <img src="icons/social-networks/instagram.svg" alt="instagram">
+          </a>
+          <a href="#">
+            <img class="ms-4" src="icons/social-networks/facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img class="ms-4" src="icons/social-networks/whatsapp.svg" alt="whatsapp">
+          </a>
+          <a href="#">
+            <img class="ms-4" src="icons/social-networks/twitter.svg" alt="twitter">
+          </a>
+        </div>
+        <div class="section__contacts-blocks d-flex">
+          <div class="section__contacts-block border-end-0">
+            <h4>8:00 - 23:00 <span>(Режим работы)</span></h4>
+            <hr>
+            <h4>+7 (900) 000-00-00 <span>(Номер телефона)</span></h4>
+            <hr>
+            <h4>mail@mail.ru <span>(Почта)</span></h4>
+            <hr>
+          </div>
+          <div class="section__contacts-block contact-img border-start-0">
+            <h3>ЗАКАЖИТЕ ОБРАТНЫЙ<br>ЗВОНОК</h3>
+            <form class="contacts__form d-flex flex-column align-items-center" action="#">
+              <input class="tel"
+              name="tel"
+              id="tel"
+              placeholder="+7 (900) 000 00 00"
+              >
+              <input type="submit" value="СВЯЗАТЬСЯ С НАМИ">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contacts" class="container mt-5">
+      <div class="section__contacts-mobile">
+        <h1 class="mb-5">ОБРАТНАЯ СВЯЗЬ</h1>
+        <div class="contacts_icons d-flex justify-content-end mb-3">
+          <img src="icons/social-networks/instagram.svg" alt="instagram">
+          <img class="ms-3" src="icons/social-networks/facebook.svg" alt="facebook">
+          <img class="ms-3" src="icons/social-networks/whatsapp.svg" alt="whatsapp">
+          <img class="ms-3" src="icons/social-networks/twitter.svg" alt="twitter">
+        </div>
+        <div class="section__contacts-mobile__block">
+          <div class="section__contacts-mobile__block-img">
+            <div class="section__contacts-mobile-backg">
+              <h3>ЗАКАЖИТЕ ОБРАТНЫЙ<br>ЗВОНОК</h3>
+              <form class="contacts__form-mobile d-flex flex-column align-items-center" action="#">
+                <input class="tel"
+                name="tel"
+                id="tel"
+                placeholder="+7"
+              >
+                <input class="text-white fw-lighter" type="submit" value="СВЯЗАТЬСЯ С НАМИ">
+              </form>
+            </div>
+          </div>
+            <div class="section__contacts-block border">
+              <h4>8:00 - 23:00 <span>(Режим работы)</span></h4>
+              <hr>
+              <h4>+7 (900) 000-00-00 <span>(Номер телефона)</span></h4>
+              <hr>
+              <h4>mail@mail.ru <span>(Почта)</span></h4>
+              <hr>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<!-- FOOTER-->
+
+
+  <div style="background-color: black;" class="footer mt-5">
+    <footer class="row container mx-auto pt-5 mt-5">
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <a href="index.html" class=" text-center mb-3 link-dark text-decoration-none">
+          MINHOUSE
+        </a>
+        <p class="text-muted">© 2022</p>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Главная</h5>
+        <ul class="nav flex-column justify-content-end">
+          <li class="nav-item mb-2">
+            <a href="index.html#aboutUs" class="nav-link p-0 text-muted">О нас</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="index.html#howWeWork" class="nav-link p-0 text-muted">Как мы работаем</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="index.html#reviews" class="nav-link p-0 text-muted">Отзывы</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="index.html#contacts" class="nav-link p-0 text-muted">Связаться</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Проекты</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="projects.html#projects" class="nav-link p-0 text-muted">Проекты домов</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="projects.html#porfolio" class="nav-link p-0 text-muted">Портфолио</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="projects.html#calcForm" class="nav-link p-0 text-muted">Расчитать стоимость</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Этапы работы</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="work-steps.html#howWeWork" class="nav-link p-0 text-muted">Как мы работаем</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="work-steps.html#advantages" class="nav-link p-0 text-muted">Преимущества</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="work-steps.html#faqs" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Ипотека</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+              <a href="hypotheс.html#calc" class="nav-link p-0 text-muted">Калькулятор ипотеки</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="hypotheс.html#faqs" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Контакты</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="contacts.html#contacts" class="nav-link p-0 text-muted">Обратная связь</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="contacts.html#map" class="nav-link p-0 text-muted">Где мы находимся</a>
+          </li>
+        </ul>
+      </div>
+  </div> 
+
+    <script src="js/js-inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

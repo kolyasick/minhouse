@@ -1,0 +1,111 @@
+header{
+    background-image: none;
+}
+
+
+
+.projects-item{
+    background-color: #141414;
+    img{
+       width: 320px; 
+       max-width: 100%;
+    }
+}
+
+.projects-item:hover{
+    scale: 1.1;
+    transition: 0.3s all !important;
+    z-index: 1000;
+}
+
+.section__portfolio{
+    img{
+        width: 100%;
+    }
+    swiper-container{
+        justify-content: start !important;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .projects-item:nth-child(3){
+        margin-top: 20px;
+    }
+    .section__projects-items {
+        justify-content: start !important;
+    }
+}
+
+
+@media (max-width: 992px){
+    .projects-item{
+        margin-right: 0px !important;
+    }
+    .projects-item:nth-child(1){
+        margin-bottom: 20px;
+    }
+    .section__projects-items{
+        justify-content: center !important;
+    }
+}
+
+.section__calcform{
+    button{
+        text-wrap: nowrap;
+        border-color: white;
+        border-radius: 0px;
+        color: #141414;
+        background-color: white;
+    }
+    .form-select, .form-control{
+        border-radius: 0px;
+        color: rgb(150, 150, 150);
+        background-color: transparent !important;
+    }
+}
+
+.calc-btn:hover{
+    background-color: #141414 !important;
+    color: white;
+}
+
+footer{
+    button{
+        border-radius: 0px !important;
+    }
+}
+
+
+#house-1{
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+
+#house-1.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#house-2{
+    transform: translateX(150%);
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+#house-2.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#house-3{
+    transform: translateX(200%);
+    transition: all 2s;
+    opacity: 0;
+}
+
+#house-3.active{
+    transform: translateX(0);
+    opacity: 1;
+}

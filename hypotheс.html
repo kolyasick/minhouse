@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainCSS/style.css">
+    <link rel="stylesheet" href="css/hypothecCSS/hypothec.css">
+    <link rel="stylesheet" href="css/work-stepsCSS/work-steps.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>MINHOUSE</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container nav__burger">
+            <div class="logo">
+                <a class="navbar-brand logo" href="index.html">MINHOUSE</a>
+            </div>
+              <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">MINHOUSE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <hr>
+                    <ul class="offcanvas__navs">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="projects.html">ПРОЕКТЫ</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="work-steps.html">ЭТАПЫ РАБОТЫ</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="hypotheс.html">ИПОТЕКА</a>
+                            <div style="opacity: 1;" class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 pb-2" href="contacts.html">КОНТАКТЫ</a>
+                            <div class="underline"></div>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="nav__items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item  me-4">
+                      <a class="nav-link p-0 pt-2" aria-current="page" href="projects.html">ПРОЕКТЫ</a>
+                      <div class="underline mt-1"></div>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link p-0 pt-2" href="work-steps.html">ЭТАПЫ РАБОТЫ</a>
+                      <div class="underline mt-1"></div>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link p-0 pt-2" href="hypotheс.html">ИПОТЕКА</a>
+                      <div  style="opacity: 1;" class="underline mt-1"></div>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link p-0 pt-2" href="contacts.html">КОНТАКТЫ</a>
+                      <div class="underline mt-1"></div>
+                    </li>
+                  </ul>
+            </div>
+            <div class="nav__number">
+              <ul>
+                  <li class="nav-item">
+                      <a class="nav-link p-0" href="#">+7 900 000 00-00</a>
+                      <div class="underline mt-1"></div>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <hr>
+    </header>
+
+
+    <!-- HYPOTHEC -->
+
+    <div id="calc" class="section__hypothec">
+        <div class="container">
+            <h1 class="fw-light">ИПОТЕКА НА<br>СТРОИТЕЛЬСТВО ДОМА</h1>
+            <div class="section__hypothec d-flex mt-5 justify-content-between">
+                <div class="section__hypothec-items mt-5 d-flex flex-column border-start">
+                    <div class="section__hypothec-item border-bottom d-flex align-items-end p-5">
+                        <h1 class="fw-light">01</h1>
+                        <h4 class="fw-normal ms-4">СЕЛЬСКАЯ ИПОТЕКА <b>ОТ 4,7%</b></h4>
+                    </div>
+                    <div class="section__hypothec-item border-bottom d-flex align-items-end p-5">
+                        <h1 class="fw-light">02</h1>
+                        <h4 class="fw-normal ms-4">СЕМЕЙНАЯ ИПОТЕКА <b>ОТ 5,5%</b></h4>
+                    </div>
+                    <div class="section__hypothec-item d-flex align-items-end p-5">
+                        <h1 class="fw-light">03</h1>
+                        <h4 class="fw-normal ms-4">ГОСПОДДЕРЖКА <b>ОТ 8,7%</b></h4>
+                    </div>
+                </div>
+                <div class="section__hypothec-calc border w-50 ps-5 pe-5 pt-4 pb-4">
+                    <h4 class="text-center fw-normal mb-4">КАЛЬКУЛЯТОР ИПОТЕКИ</h4>
+                    <label for="customRange1" class="form-label">
+                        <h6 class="fw-normal">Сумма недвижимости (руб.)</h6>
+                        <p class="m-0 fw-light">
+                          <output id="value"></output>
+                        </p>
+                    </label>
+                    <input type="range" min="0" max="4500000" step="1000" class="form-range border-top" id="customRange1">
+                    <label for="customRange2" class="form-label mt-4">
+                        <h6 class="fw-normal">Процентная ставка (%)</h6>
+                        <p class="m-0 fw-light">
+                          <output id="value2"></output>
+                        </p>
+                    </label>
+                    <input type="range" min="0" max="5.3" step="0.1" class="form-range border-top" id="customRange2">
+                    <label for="customRange3" class="form-label mt-4">
+                        <h6 class="fw-normal">Первоначальный взнос (руб.)</h6>
+                        <p class="m-0 fw-light">
+                          <output id="value3"></output>
+                        </p>
+                    </label>
+                    <input type="range" min="0" max="1000000" step="1000" class="form-range border-top" id="customRange3">
+                    <label for="customRange4" class="form-label mt-4">
+                        <h6 class="fw-normal">Срок ипотеки (лет) </h6>
+                        <p class="m-0 fw-light">
+                          <output id="value4"></output>
+                        </p>
+                    </label>
+                    <input type="range" class="form-range border-top mb-5" min="0" max="5" step="1" id="customRange4">
+                    <div id="sub-btn" class="btn-dark d-inline p-3">Расчитать стоимость</div>
+                    <div id="result" class="mt-5 text-white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how_we_work-backg">
+    </div>
+
+    <!-- FAQ -->
+
+    <div id="faqs" class="section__faq">
+      <div class="container">
+        <h1 class="mt-5 mb-5 fw-light ">ЧАСТОЗАДАВАЕМЫЕ<br>ВОПРОСЫ</h1>
+        <div class="section__faq-flex row">
+          <div class="section__faq-img col-xl-7 col-md-12 pe-5 ps-0 text-">
+            <img class="faq-img" src="img/faq-images/faq-img.jpg" alt="">
+          </div>
+          <div class="section__faq-items col-xl-5 col-md-8 p-0">
+            <div class="wrapper bg-dark">
+              <div class="accordion accordion-flush border-0" id="myAccordion">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed border-top text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> ЗА КАКОЙ СРОК БУДЕТ ГОТОВ? </button> </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                              <ul class="list-unstyled m-0">
+                                  <p class="text-dark p-2">От 6 мес. до 2 лет. Все зависит от количества работ и масштаба.</p>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> КАКИЕ ГАРАНТИИ ИСПОЛНЕНИЯ У ВАС ЕСТЬ? </button> </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                              <ul class="list-unstyled m-0">
+                                <p class="text-dark p-2">Гарантии на наши работы более 5 лет с момента подписания договора.</p>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> КАКИЕ МАТЕРИАЛЫ ИСПОЛЬЗУЮТСЯ? </button> </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                              <ul class="list-unstyled m-0">
+                                  <p class="text-dark p-2">Мы используме исключительно материалы собственного проихвожства, дабы обеспечить наилучшее качество.</p>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"> КАКОЙ ФУНДАМЕНТ БУДЕТ У ДОМА? </button> </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                        <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0">
+                                <p class="text-dark p-2">Плитный фундамент самый надежный и дорогой. В загородном строительстве он используется нечасто, поэтому сконцентрируемся на ленточном и столбчатом.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> ЧТО ТАКОЕ ИПОТЕКА НА СТРОИТЕЛЬСТВО? </button> </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                              <ul class="list-unstyled m-0">
+                                <p class="text-dark p-2">Ипотека — это залог недвижимости. То есть ипотечный кредит означает, что вы берете у банка деньги под процент (кредит), а гарантией того, что вы вернете эти деньги, становится залог вашего недвижимого имущества: дома, квартиры, земельного участка.</p>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> КАК ОЦЕНИВАЕТСЯ НЕДВИЖИМОСТЬ? </button> </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                        <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0">
+                              <p class="text-dark p-2">Оценка недвижимости бывает нескольких видов — кадастровая, рыночная, ликвидационная и инвестиционная.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item ">
+                  <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed text-white " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"> КАКОЙ ПРОЦЕСС ПОЛУЧЕНИЯ ИПОТЕКИ? </button> </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                      <div class="accordion-body p-0">
+                          <ul class="list-unstyled m-0">
+                            <p class="text-dark p-2">Основными этапами оформления ипотеки являются выбор банка, подача заявки в банк и получение одобрения, выбор объекта, его оценка и согласование с банком, оформление ипотеки и регистрация права собственности.</p>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne"> <button class="fw-light accordion-button collapsed border-bottom text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"> КАК ЗАПИСАТЬСЯ НА ПРОСМОТР ДОМА? </button> </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                    <div class="accordion-body p-0">
+                        <ul class="list-unstyled m-0">
+                          <p class="text-dark p-2">Вы можете позвонить по нашему номеру или написать на почту, мы ответим как можно скорее.</p>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+
+  <div style="background-color: black;" class="footer mt-5">
+    <footer class="row container mx-auto pt-5 mt-5">
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <a href="index.html" class=" text-center mb-3 link-dark text-decoration-none">
+          MINHOUSE
+        </a>
+        <p class="text-muted">© 2022</p>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Главная</h5>
+        <ul class="nav flex-column justify-content-end">
+          <li class="nav-item mb-2">
+            <a href="index.html#aboutUs" class="nav-link p-0 text-muted">О нас</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="index.html#howWeWork" class="nav-link p-0 text-muted">Как мы работаем</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="index.html#reviews" class="nav-link p-0 text-muted">Отзывы</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="index.html#contacts" class="nav-link p-0 text-muted">Связаться</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Проекты</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="projects.html#projects" class="nav-link p-0 text-muted">Проекты домов</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="projects.html#porfolio" class="nav-link p-0 text-muted">Портфолио</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="projects.html#calcForm" class="nav-link p-0 text-muted">Расчитать стоимость</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Этапы работы</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="work-steps.html#howWeWork" class="nav-link p-0 text-muted">Как мы работаем</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="work-steps.html#advantages" class="nav-link p-0 text-muted">Преимущества</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="work-steps.html#faqs" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Ипотека</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+              <a href="hypotheс.html#calc" class="nav-link p-0 text-muted">Калькулятор ипотеки</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="hypotheс.html#faqs" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center col-xl-2 col-md-4 col-sm-6 mb-3">
+        <h5>Контакты</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="contacts.html#contacts" class="nav-link p-0 text-muted">Обратная связь</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="contacts.html#map" class="nav-link p-0 text-muted">Где мы находимся</a>
+          </li>
+        </ul>
+      </div>
+  </div> 
+    
+
+      <script src="js/hypothec.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/calc.js"></script>
+</body>
+</html>
